@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- Declaring input field and search button -->
+    <div class="input-group mb-3">
+        <input type="text" id="search-feild" class="form-control" placeholder="Search for books" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBooks()" id="search-button" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+    </div>
+    
+    <!-- Adding spinner -->
+    <div id="spinner" class="spinner-border text-primary d-none" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <!-- Error message -->
+    <h1 class="text-center text-danger d-none" id="error-message">Search for a valid book</h1>
+
+    <!-- Showing total books found number -->
+    <div id="total-books-number"></div>
+
+    <!-- Showing Books -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+
+
+    <!-- boostarp javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Connecting Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
